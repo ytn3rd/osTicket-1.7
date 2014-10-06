@@ -60,7 +60,7 @@
     }
 
     #Set Dir constants
-    define('ROOT_DIR',str_replace('\\\\', '/', realpath(dirname(__FILE__))).'/'); #Get real path for root dir ---linux and windows
+    define('ROOT_DIR',str_replace('\\', '/', realpath(dirname(__FILE__))).'/'); #Get real path for root dir ---linux and windows
     define('INCLUDE_DIR',ROOT_DIR.'include/'); //Change this if include is moved outside the web path.
     define('PEAR_DIR',INCLUDE_DIR.'pear/');
     define('SETUP_DIR',INCLUDE_DIR.'setup/');
@@ -71,7 +71,7 @@
     /*############## Do NOT monkey with anything else beyond this point UNLESS you really know what you are doing ##############*/
 
     #Current version && schema signature (Changes from version to version)
-    define('THIS_VERSION','1.7.0+'); //Shown on admin panel
+    define('THIS_VERSION','1.7-git'); //Shown on admin panel
 
 
     require(INCLUDE_DIR.'class.osticket.php');
